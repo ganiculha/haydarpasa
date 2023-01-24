@@ -1,0 +1,54 @@
+const list = [
+  {
+    id:1,
+    title: "Haydarpaşa Gar'ı; koca bir ümidi, hafızayı ve zamanı içinde taşır."
+    src: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Cs3aiUfkpkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+  },
+  {
+    id: 2,
+    title: "Haydarpaşa Garı & Arkeoparkı Son Durum",
+
+    src: 'width="560" height="315" src="https://www.youtube.com/embed/4wStaDTVKiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
+  },
+  {
+    id: 3,
+    title: "HAYDARPAŞA KAZISI TARİHE IŞIK TUTUYOR",
+
+    src: 'width ="560" height="315" src="https://www.youtube.com/embed/IWKWtozKtyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
+  },
+  {
+    id:4,
+    title: "Haydarpaşa Garı'nın Tarihi ve Son Hali",
+    src:<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-vJqYjtBNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  }
+  {
+    id:5,
+    title: "Kadıköy'de rayların altından çıkan İstanbul tarihi - DW Türkçe",
+    src: <iframe width="560" height="315" src="https://www.youtube.com/embed/j98HzHZHfsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  }
+  {
+    id:6
+    title:"HAYDARPAŞA GARI NE ZAMAN AÇILACAK? | SON DURUMU VE BULUNAN TARİHİ ESERLER"
+    src:'<iframe width="560" height="315" src="https://www.youtube.com/embed/EnuHeoulgB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+  }
+];
+
+const sectionCenter = document.querySelector(".section-center");
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayMenu = menu.map(function (item) {
+    return ` <article class="menu-item">
+    <iframe ${item.src} >
+</iframe>
+    <div class="item-info">
+      <header>
+        <h4>
+        ${item.title}
+        </h4>
+      </header>
+    </div>
+  </article>`;
+  });
+  displayMenu = displayMenu.join("");
+  sectionCenter.innerHTML = displayMenu;
+});
