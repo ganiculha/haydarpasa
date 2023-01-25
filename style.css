@@ -24,6 +24,11 @@ body {
   max-width: 100%;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .page-1 {
+    height: 150vh;
+  }
+}
 
 .navbar {
   position: fixed;
@@ -123,6 +128,13 @@ body {
   .navbar-text-home {
     font-size: 0.75rem;
     top: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .navbar-text-home {
+    font-size: 0.75rem;
+    top: 0.3rem;
+    left: 1rem;
   }
 }
 .navbar-text-home:hover {
@@ -332,22 +344,7 @@ body {
 @media (max-width: 415px) {
   .page-2 {
     width: 100%;
-    height: 155vh;
-  }
-}
-@media (max-height: 750px) {
-  .page-2 {
-    height: 125vh;
-  }
-}
-@media (max-height: 650px) {
-  .page-2 {
-    height: 160vh;
-  }
-}
-@media (max-height: 450px) {
-  .page-2 {
-    height: 220vh;
+    height: 210vh;
   }
 }
 
@@ -370,6 +367,12 @@ body {
 @media (max-width: 415px) {
   .history-page {
     grid-template-columns: 1fr;
+    padding-top: 15rem;
+  }
+}
+@media (max-width: 500px) {
+  .history-page {
+    margin-bottom: 20rem;
   }
 }
 .history-page-text {
@@ -439,22 +442,12 @@ body {
 }
 @media (max-width: 415px) {
   .page-3 {
-    height: 185vh;
+    height: 260vh;
   }
 }
-@media (max-height: 750px) {
+@media (max-width: 300px) {
   .page-3 {
-    height: 120vh;
-  }
-}
-@media (max-height: 650px) {
-  .page-3 {
-    height: 145vh;
-  }
-}
-@media (max-height: 550px) {
-  .page-3 {
-    height: 165vh;
+    max-height: 200vh;
   }
 }
 
@@ -526,20 +519,11 @@ body {
 /* foto-page-*/
 .page-4 {
   height: 100vh;
+  background-color: red;
 }
 @media (max-width: 600px) {
   .page-4 {
     height: 80vh;
-  }
-}
-@media (max-height: 750px) {
-  .page-4 {
-    height: 100vh;
-  }
-}
-@media (max-height: 450px) {
-  .page-4 {
-    margin-top: 10rem;
   }
 }
 
@@ -573,22 +557,8 @@ body {
 @media (max-width: 415px) {
   .foto-page-container-width {
     width: 100%;
-    height: 80vh;
-  }
-}
-@media (max-height: 650px) {
-  .foto-page-container-width {
-    height: 110vh;
-  }
-}
-@media (max-height: 550px) {
-  .foto-page-container-width {
-    height: 130vh;
-  }
-}
-@media (max-height: 450px) {
-  .foto-page-container-width {
-    height: 150vh;
+    height: 100vh;
+    padding-top: 3rem;
   }
 }
 .foto-page-container img {
@@ -612,26 +582,6 @@ body {
   .foto-page-container-all {
     flex-direction: column-reverse;
     padding: 6rem 1rem;
-  }
-}
-@media (max-height: 750px) {
-  .foto-page-container-all {
-    padding-top: 15rem;
-  }
-}
-@media (max-height: 750px) {
-  .foto-page-container-all {
-    padding: 7rem 5rem;
-  }
-}
-@media (max-height: 650px) {
-  .foto-page-container-all {
-    padding: 5rem 5rem;
-  }
-}
-@media (max-height: 550px) {
-  .foto-page-container-all {
-    padding: 6rem 5rem;
   }
 }
 .foto-page-container-left {
@@ -702,6 +652,14 @@ body {
     width: 55%;
   }
 }
+@media (max-width: 415px) {
+  .foto-page-button-left {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+    width: 70%;
+  }
+}
 .foto-page-button-right {
   width: 15rem;
   font-size: 1.7rem;
@@ -721,24 +679,15 @@ body {
 .page-5 {
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .page-5 {
+    height: 200vh;
+  }
+}
 @media (max-width: 415px) {
   .page-5 {
-    height: 330vh;
-  }
-}
-@media (max-height: 750px) {
-  .page-5 {
-    height: 120vh;
-  }
-}
-@media (max-height: 750px) {
-  .page-5 {
-    margin-top: 8rem;
-  }
-}
-@media (max-height: 450px) {
-  .page-5 {
-    margin-top: 15rem;
+    height: 470vh;
+    margin-top: 7rem;
   }
 }
 
@@ -865,26 +814,6 @@ body {
 .page-6 {
   height: 100vh;
 }
-@media (max-height: 750px) {
-  .page-6 {
-    padding-top: 6rem;
-  }
-}
-@media (max-height: 650px) {
-  .page-6 {
-    margin-top: 6rem;
-  }
-}
-@media (max-height: 550px) {
-  .page-6 {
-    margin-top: 12rem;
-  }
-}
-@media (max-height: 450px) {
-  .page-6 {
-    margin-top: 20rem;
-  }
-}
 
 .sosyal-page-main-container {
   width: 60%;
@@ -905,7 +834,7 @@ body {
 @media (max-width: 415px) {
   .sosyal-page-main-container {
     width: 100%;
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
 }
 .sosyal-page-container {
@@ -920,9 +849,9 @@ body {
     padding: 1rem;
   }
 }
-@media (max-height: 650px) {
+@media (max-width: 500px) {
   .sosyal-page-container {
-    padding-top: 1rem;
+    grid-template-columns: 1fr 10fr 1fr;
   }
 }
 .sosyal-page-container-1 {
@@ -949,4 +878,10 @@ body {
   color: #a3c5bb;
   line-height: 2rem;
   font-size: 1rem;
+}
+@media (max-width: 415px) {
+  .sosyal-page-footer {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
