@@ -340,6 +340,16 @@ body {
     height: 125vh;
   }
 }
+@media (max-height: 650px) {
+  .page-2 {
+    height: 160vh;
+  }
+}
+@media (max-height: 450px) {
+  .page-2 {
+    height: 220vh;
+  }
+}
 
 .history-page {
   display: grid;
@@ -437,6 +447,16 @@ body {
     height: 120vh;
   }
 }
+@media (max-height: 650px) {
+  .page-3 {
+    height: 145vh;
+  }
+}
+@media (max-height: 550px) {
+  .page-3 {
+    height: 165vh;
+  }
+}
 
 .video-page-container {
   height: 100vh;
@@ -517,6 +537,11 @@ body {
     height: 100vh;
   }
 }
+@media (max-height: 450px) {
+  .page-4 {
+    margin-top: 10rem;
+  }
+}
 
 .foto-page-container {
   display: flex;
@@ -551,6 +576,21 @@ body {
     height: 80vh;
   }
 }
+@media (max-height: 650px) {
+  .foto-page-container-width {
+    height: 110vh;
+  }
+}
+@media (max-height: 550px) {
+  .foto-page-container-width {
+    height: 130vh;
+  }
+}
+@media (max-height: 450px) {
+  .foto-page-container-width {
+    height: 150vh;
+  }
+}
 .foto-page-container img {
   width: 100%;
   border-radius: 0.3rem;
@@ -582,6 +622,16 @@ body {
 @media (max-height: 750px) {
   .foto-page-container-all {
     padding: 7rem 5rem;
+  }
+}
+@media (max-height: 650px) {
+  .foto-page-container-all {
+    padding: 5rem 5rem;
+  }
+}
+@media (max-height: 550px) {
+  .foto-page-container-all {
+    padding: 6rem 5rem;
   }
 }
 .foto-page-container-left {
@@ -679,6 +729,16 @@ body {
 @media (max-height: 750px) {
   .page-5 {
     height: 120vh;
+  }
+}
+@media (max-height: 750px) {
+  .page-5 {
+    margin-top: 8rem;
+  }
+}
+@media (max-height: 450px) {
+  .page-5 {
+    margin-top: 15rem;
   }
 }
 
@@ -804,11 +864,25 @@ body {
 /*sosyal-medya-page*/
 .page-6 {
   height: 100vh;
-  padding-top: 6rem;
 }
 @media (max-height: 750px) {
   .page-6 {
     padding-top: 6rem;
+  }
+}
+@media (max-height: 650px) {
+  .page-6 {
+    margin-top: 6rem;
+  }
+}
+@media (max-height: 550px) {
+  .page-6 {
+    margin-top: 12rem;
+  }
+}
+@media (max-height: 450px) {
+  .page-6 {
+    margin-top: 20rem;
   }
 }
 
@@ -837,12 +911,18 @@ body {
 .sosyal-page-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 6rem;
   gap: 1rem;
 }
 @media (max-width: 415px) {
   .sosyal-page-container {
     grid-template-columns: 1fr 50fr 1fr;
     padding: 1rem;
+  }
+}
+@media (max-height: 650px) {
+  .sosyal-page-container {
+    padding-top: 1rem;
   }
 }
 .sosyal-page-container-1 {
