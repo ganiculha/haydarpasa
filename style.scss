@@ -38,6 +38,9 @@ body {
   @media (max-width: 500px) {
     height: 150vh;
   }
+  @media (max-width: 350px) {
+    height: 95vh;
+  }
 }
 
 .navbar {
@@ -72,6 +75,9 @@ body {
     height: 5rem;
     padding: 1.5rem 1% 0.5rem 5%;
   }
+  @media (max-width: 280px) {
+    padding-top: 2.5rem;
+  }
 
   &-text {
     font-size: 1.5rem;
@@ -99,6 +105,9 @@ body {
       @media (max-width: 415px) {
         font-size: 0.75rem;
         padding-left: 1rem;
+      }
+      @media (max-width: 280px) {
+        padding-left: 0;
       }
       &:hover {
         color: #b05a7a;
@@ -199,6 +208,12 @@ body {
       left: 11%;
       top: 14%;
     }
+    @media (max-width: 350px) {
+      width: 50%;
+      height: 120%;
+      left: 11%;
+      top: 14%;
+    }
     &-2 {
       width: 14rem;
       font-size: 2.5rem;
@@ -226,10 +241,20 @@ body {
         height: 20%;
         width: 30%;
       }
+      @media (max-width: 350px) {
+        font-size: 1rem;
+        top: 32%;
+        right: 2rem;
+        width: 20%;
+        height: 25%;
+      }
     }
     & i {
       padding-top: 1rem;
       float: right;
+    }
+    @media (max-width: 350px) {
+      padding-top: 0;
     }
   }
 
@@ -302,7 +327,13 @@ body {
   }
   @media (max-width: 415px) {
     width: 100%;
-    height: 210vh;
+    height: 160vh;
+  }
+  @media (max-width: 390px) {
+    height: 170vh;
+  }
+  @media (max-width: 375px) {
+    height: 215vh;
   }
 }
 .history-page {
@@ -316,12 +347,12 @@ body {
   @media (max-width: 600px) {
     padding: 1rem 1rem;
   }
-  @media (max-width: 415px) {
-    grid-template-columns: 1fr;
-    padding-top: 15rem;
-  }
   @media (max-width: 500px) {
     margin-bottom: 20rem;
+  }
+  @media (max-width: 415px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 
   &-text {
@@ -381,10 +412,22 @@ body {
   height: 100vh;
 
   @media (max-width: 415px) {
+    height: 180vh;
+  }
+  @media (max-width: 350px) {
+    height: 190vh;
+  }
+  @media (max-width: 390px) {
+    height: 200vh;
+  }
+  @media (max-width: 375px) {
     height: 260vh;
   }
   @media (max-width: 300px) {
     max-height: 200vh;
+  }
+  @media (max-width: 280px) {
+    max-height: 350vh;
   }
 }
 .video-page-container {
@@ -406,6 +449,10 @@ body {
   @media (max-width: 415px) {
     padding-top: 8rem;
     width: 100%;
+    height: 180vh;
+  }
+  @media (max-width: 350px) {
+    height: 190vh;
   }
 }
 
@@ -447,8 +494,6 @@ body {
 
 .page-4 {
   height: 100vh;
-  background-color: red;
-
   @media (max-width: 600px) {
     height: 80vh;
   }
@@ -597,8 +642,11 @@ body {
   }
 
   @media (max-width: 415px) {
-    height: 470vh;
+    height: 400vh;
     margin-top: 7rem;
+  }
+  @media (max-width: 375px) {
+    height: 470vh;
   }
 }
 .kitap-page {
@@ -625,6 +673,7 @@ body {
       max-width: 100%;
       grid-template-columns: 1fr;
       padding-top: 7rem;
+      height: 400vh;
     }
   }
   &-small-container {
