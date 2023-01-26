@@ -58,7 +58,7 @@ body {
   background-color: $navbar-color;
   z-index: 100;
   @media (max-width: 1200px) {
-    gap: 1.5rem;
+    gap: 1rem;
     width: 70%;
   }
   @media (max-width: 900px) {
@@ -120,12 +120,12 @@ body {
       position: absolute;
       top: -5;
       left: 1rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
       text-decoration: none;
       color: $text-color;
       font-family: cursive, "Arial Narrow", Arial, sans-serif;
       @media (max-width: 900px) {
-        font-size: 1rem;
+        font-size: 0.7rem;
       }
       @media (max-width: 415px) {
         font-size: 0.75rem;
