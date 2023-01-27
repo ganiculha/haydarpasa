@@ -34,6 +34,11 @@ const videoList = [
     title: "Ayla Çelik - Bağdat (Beyazıt Öztürk Düet Versiyon)",
     src: 'width="425" height="210" src="https://www.youtube.com/embed/xl63OdwuoAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
   },
+  {
+    id: 8,
+    title: "Candan Erçetin Kırık Kalpler Duragında",
+    src: 'width="425" height="210" src="https://www.youtube.com/embed/Cj7Y6yHA098" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
+  },
 ];
 
 const videoPage = document.querySelector(".video-pages");

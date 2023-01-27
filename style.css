@@ -485,7 +485,7 @@ body {
 /**********page-3**********/
 /*video-page*/
 .page-3 {
-  height: 100vh;
+  height: 125vh;
 }
 @media (max-width: 415px) {
   .page-3 {
@@ -749,7 +749,12 @@ body {
 /*****page-5*********/
 /*kitap-page*/
 .page-5 {
-  height: 100vh;
+  height: 125vh;
+}
+@media (max-width: 600px) {
+  .page-5 {
+    height: 230vh;
+  }
 }
 @media (max-width: 500px) {
   .page-5 {
@@ -884,7 +889,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 1rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
   cursor: pointer;
 }
 
