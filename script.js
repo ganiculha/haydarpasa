@@ -29,6 +29,11 @@ const videoList = [
     title: "HAYDARPAŞA GARI NE ZAMAN AÇILACAK? SON DURUMU...",
     src: 'width="425" height="210" src="https://www.youtube.com/embed/EnuHeoulgB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
   },
+  {
+    id: 7,
+    title: "Ayla Çelik - Bağdat (Beyazıt Öztürk Düet Versiyon)",
+    src: 'width="425" height="210" src="https://www.youtube.com/embed/xl63OdwuoAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen',
+  },
 ];
 
 const videoPage = document.querySelector(".video-pages");
@@ -74,10 +79,10 @@ const kitapList = [
   },
   {
     id: 4,
-    author: "Ayça Yüksel",
-    name: "Haydarpaşa Kitabı",
-    src: "./img/book-img/haydarpasa_kitabı.jpg",
-    desc: "Haydarpaşa Garı, Türkiye’de kentleşme dinamiklerinin farklı boyutlarını bir arada düşünebilmeye olanak sağlayan az sayıdaki mekânlardan biridir. Bu anlamıyla da yalnızca Kadıköy veya İstanbul için değil, tüm Türkiye için tarihsel, kültürel ve sosyolojik anlamda özgünlükler taşır.Kadıköy Belediyesi’nin kent araştırmaları merkezi olan Kadıköy Akademi bünyesinde hazırlanan ve Akademi Serisi’nin ilk yayını olan Haydarpaşa Kitabı: Mekan, Kent, Mücadele ile Haydarpaşa’ya dair özgün ve derinlikli makaleler bir araya getiriliyor. Kitapta, mimarlık tarihi, kültürel ve endüstriyel miras, kentsel politika, ekonomi-politik, kentsel ulaşım ve planlama, mekânsal kimlik, sinema ve sanat çalışmaları, akustik ekoloji ve ses peyzajı/çevresi, kentsel toplumsal hareketler ve emek mücadelesi alanından araştırma ve analizler, demiryolcuların ve sendikacıların tanıklıkları ile bir arada sunuluyor.Bir sanat eseri, bir mimari yapı, bir demiryolu mirası, bir direniş mekânı, seslerin buluştuğu bir yer, mahalle mekânı, film karesi ve daha birçok farklı formda Haydarpaşa hikayelerini barındıran çalışma, Gar’ın imkanlarını da kayıt altına alıyor...",
+    author: "Haydarpaşa Dayanışması",
+    name: "Yaşayan Haydarpaşa",
+    src: "./img/book-img/Yasayan_Haydarpasa.webp",
+    desc: "Haydarpaşa’nın şehre sunduğu farklı pratiklere, kişisel, kolektif ve politik belleğe açılan kitap, Mücadelenin Belleği, Paylaştığımız Her Şey, Haydarpaşa Anlatıları ve Öyküleri, Haydarpaşa’dan Şiirler başlıklı olmak üzere dört bölümden oluşuyor. Kitap, Haydarpaşa Garı’ndaki kent hakkı ve emek mücadelesine, mekânın politik belleğine, kişisel anılara, deneyimlere, demiryolculuk kültürüne ve dostluklara açılan tanıklıkları bir araya getirmeyi amaçlıyor. Aslında hem kolektif hem de son derece tekil olabilen Haydarpaşa’ya dair paylaştığımız belleğin, doğrudan bu belleği kuranlar tarafından yazıldığı bir kitap bu. Yani burada üçüncü kişilerin anlatılarından ziyade; bizzat aktörlerin, öznelerin anlatımlarını görüyoruz. Farklı mesleklerden ve yerlerden gelen ve bu kitapta Haydarpaşa ortak paydasında buluşan 66 yazar bulunuyor. Çocukluğunu Haydarpaşa’da geçirenlerin, ailesi demiryolcu olanların, demiryolcu emekçilerinin, Haydarpaşa’da dans edenlerin, fotoğraf çekenlerin, ilk bestesini Haydarpaşa’da yapanların, Gar’a öyküler ve şiirler yazanların, Haydarpaşa’dan yolculuklara gidip, yolculuklardan gelenlerin… Yani yaşamının bir bölümünde yolu Haydarpaşa’yla kesişmiş ve buna özel bir anlam yüklemiş kişilerin anlatıları yer alıyor.",
   },
   {
     id: 5,
@@ -103,9 +108,23 @@ const kitapList = [
   {
     id: 8,
     author: "ZEKİ ARIKAN",
-    name: "HYDARPAŞA'DAN İZMİR'E TARİH SÖYLEŞİLERİ",
+    name: "HAYDARPAŞA'DAN İZMİR'E TARİH SÖYLEŞİLERİ",
     src: "./img/book-img/haydarpasadan_Izmire.jpg",
     desc: "Prof. Dr. Zeki Arıkan “Tarih Söyleşileri” bağlamında üçüncüsü olan bu kitapta topladığı yazılarında hem güncel olaylara değiniyor, hem de 1940 ve sonrasında Türkiye’nin kültür hayatının temelini atan bazı aydınlarımızın çalışmalarını, hayatlarını, kişiliklerini renkli bir üslupla anlatıyor.Köy Enstitülerinin kurucusu Hasan Âli Yücel''in başlattığı çok yönlü aydınlanma hareketiyle 1940''lı yılların Türkiye’sinin nasıl Rönesans’ın eşiğine geldiğini, Arıkan’ın yazılarında değindiği Doğan Kuban, Orhan Burian, Vedat Günyol, Şerafettin Turan, Fuat Köprülü ve öğrencileri Mustafa Akdağ, Halil İnalcık gibi aydınlanmacılardan, Köy Enstitüsü çıkışlı yazar ve şairlerden (ör. Mehmet Başaran) kavrıyor ve mutluluk duyuyoruz. O dönemde aydınlarımız tarafından üretilen eserlerin; önemli dünya yapıtlarının Türkçeye hızla kazandırılmasının, yayımlanan dergilerin (Yücel, Ufuklar gibi) Türkiye’nin kültür hayatında nasıl büyük bir değişime yol açtığını mutlulukla izlerken, bu güzel çalışmaların daha sonra nasıl yok edildiğini, karalandığını görerek sarsılıyoruz...",
+  },
+  {
+    id: 9,
+    author: "ZEKİ ARIKAN",
+    name: "Kurtuluş Yıllarında Haydarpaşa Sendikası",
+    src: "./img/book-img/Kurtulus_Yillarinda_Haydarpasa_Sendikasi.jpg",
+    desc: "Bu çalışmanın konusu spesifik olarak, Haydarpaşa’da 1950 yılından başlayarak ilk demiryolu sendikalarının çıkışı ve 1964 yılında ilk işkolu sözleşmesinin bağıtlanmasına kadar geçen 14 yıl içinde yaşanan sürecin bugüne akatarılabilmesidir. Genel olarak ise bu çalışma 1947-1963 dönemini kapsar. 1947’de ilk sendika yasasının yürürlüğe girmesiyle bütün işkollarında sendikaların kurulup yaygınlaştığı bir süreç başlamış, 1963’te ise 1961 Anayasası ile tanınan toplu pazarlık ve grev hakkının –olabildiğince kısıtlanarak da olsa- yasayla düzenlenmesi ve toplu pazarlık düzeninin başlamasıyla çalışma ilişkilerinde yeni bir döneme girilmiş; Haydarpaşa Sendikası Başkanının ifadesiyle, 'sendikalar rüştüne ermiştir.'",
+  },
+  {
+    id: 10,
+    author: "FUAT SEVİMAY",
+    name: "Haydar Paşa’nın Evi",
+    src: "./img/book-img/Haydar_Pasa’nin_Evi.webp",
+    desc: "Annesiyle gezmeye çıkan çocuğun macerası İstanbul’un simgelerinden Haydarpaşa Garı’ndan başlar. Küçük çocuk buranın Haydar Paşa’nın evi olduğunu düşünür. Acaba bu kadar kocaman bir yerde yaşayan, bahçesinde trenleri olan Haydar Paşa nasıl biridir? Haydar Paşa’nın Evi 2012’de Ankara Mimarlar Odası “Kentimi Okuyorum Çocuk Kitapları Yarışması” Birincilik Ödülü’ne değer görülmüştü. Gözde Eyce’nin illüstrasyonlarını yaptığı kitap 7 yaş üstü çocuklara hitap ediyor.",
   },
 ];
 
