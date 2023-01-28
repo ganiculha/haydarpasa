@@ -50,6 +50,10 @@ body {
   @media (max-width: 350px) {
     height: 95vh;
   }
+  @media (max-width: 330px) {
+    height: 125vh;
+  }
+
   @media (max-width: 280px) {
     height: 125vh;
   }
@@ -348,15 +352,14 @@ body {
   }
   @media (max-width: 415px) {
     width: 100%;
-    height: 160vh;
-    padding-top: 4rem;
+    height: 180vh;
   }
   @media (max-width: 390px) {
-    height: 170vh;
+    height: 210vh;
   }
 
   @media (max-width: 375px) {
-    height: 150vh;
+    height: 200vh;
   }
 }
 .history-page {
@@ -445,13 +448,16 @@ body {
   }
 
   @media (max-width: 395px) {
-    height: 260vh;
+    height: 320vh;
   }
   @media (max-width: 375px) {
-    height: 250vh;
+    height: 330vh;
   }
   @media (max-width: 350px) {
     height: 190vh;
+  }
+  @media (max-width: 330px) {
+    height: 330vh;
   }
 
   @media (max-width: 280px) {
@@ -659,7 +665,7 @@ body {
 .page-5 {
   height: 125vh;
   @media (max-width: 1300px) {
-    height: 150vh;
+    height: 165vh;
   }
 
   @media (max-width: 1050px) {
@@ -675,15 +681,16 @@ body {
     height: 225vh;
   }
   @media (max-width: 415px) {
-    height: 430vh;
-    margin-top: 7rem;
-  }
-  @media (max-width: 395px) {
     height: 460vh;
   }
+
   @media (max-width: 375px) {
-    height: 420vh;
+    height: 580vh;
   }
+  @media (max-width: 330px) {
+    height: 550vh;
+  }
+
   @media (max-width: 280px) {
     height: 420vh;
   }
