@@ -35,18 +35,23 @@ body {
 .page-1 {
   max-width: 100%;
   height: 100vh;
+
   @media (max-width: 1050px) {
     height: 150vh;
   }
+  @media (max-width: 900px) {
+    height: 100vh;
+  }
+
   @media (max-width: 500px) {
-    height: 150vh;
+    height: 100vh;
   }
 
   @media (max-width: 350px) {
     height: 95vh;
   }
-  @media (max-width: 285px) {
-    height: 165vh;
+  @media (max-width: 280px) {
+    height: 125vh;
   }
 }
 
@@ -76,6 +81,7 @@ body {
     gap: 0.5rem;
     width: 90%;
   }
+
   @media (max-width: 415px) {
     width: 100%;
     gap: 0.5rem;
@@ -139,7 +145,7 @@ body {
         top: 0.5rem;
       }
       @media (max-width: 500px) {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
         top: 0.3rem;
         left: 1rem;
       }
@@ -337,6 +343,9 @@ body {
   @media (max-width: 600px) {
     width: 90%;
   }
+  @media (max-width: 500px) {
+    height: 120vh;
+  }
   @media (max-width: 415px) {
     width: 100%;
     height: 160vh;
@@ -347,7 +356,7 @@ body {
   }
 
   @media (max-width: 375px) {
-    height: 215vh;
+    height: 150vh;
   }
 }
 .history-page {
@@ -361,12 +370,8 @@ body {
   @media (max-width: 600px) {
     padding: 1rem 1rem;
   }
-  @media (max-width: 500px) {
-    margin-bottom: 20rem;
-  }
   @media (max-width: 415px) {
     grid-template-columns: 1fr;
-    margin-bottom: 0;
   }
 
   &-text {
@@ -431,6 +436,10 @@ body {
   @media (max-width: 1050px) {
     height: 210vh;
   }
+  @media (max-width: 900px) {
+    height: 130vh;
+  }
+
   @media (max-width: 415px) {
     height: 245vh;
   }
@@ -439,16 +448,14 @@ body {
     height: 260vh;
   }
   @media (max-width: 375px) {
-    height: 350vh;
+    height: 250vh;
   }
   @media (max-width: 350px) {
     height: 190vh;
   }
-  @media (max-width: 300px) {
-    height: 200vh;
-  }
+
   @media (max-width: 280px) {
-    height: 360vh;
+    height: 250vh;
   }
 }
 .video-page-container {
@@ -512,7 +519,7 @@ body {
 .page-4 {
   height: 100vh;
   @media (max-width: 600px) {
-    height: 80vh;
+    height: 100vh;
   }
 }
 .foto-page-container {
@@ -534,11 +541,9 @@ body {
     }
     @media (max-width: 600px) {
       width: 90%;
-      height: 80vh;
     }
     @media (max-width: 415px) {
       width: 100%;
-      height: 100vh;
       padding-top: 3rem;
     }
   }
@@ -660,11 +665,14 @@ body {
   @media (max-width: 1050px) {
     height: 190vh;
   }
+  @media (max-width: 900px) {
+    height: 120vh;
+  }
   @media (max-width: 600px) {
     height: 230vh;
   }
   @media (max-width: 500px) {
-    height: 200vh;
+    height: 225vh;
   }
   @media (max-width: 415px) {
     height: 430vh;
@@ -674,10 +682,10 @@ body {
     height: 460vh;
   }
   @media (max-width: 375px) {
-    height: 580vh;
+    height: 420vh;
   }
   @media (max-width: 280px) {
-    height: 600vh;
+    height: 420vh;
   }
 }
 .kitap-page {
@@ -700,7 +708,7 @@ body {
       grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 415px) {
-      max-width: 100%;
+      width: 100%;
       grid-template-columns: 1fr;
       padding-top: 7rem;
     }
