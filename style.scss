@@ -352,7 +352,7 @@ body {
   }
   @media (max-width: 415px) {
     width: 100%;
-    height: 180vh;
+    height: 210vh;
   }
   @media (max-width: 390px) {
     height: 210vh;
@@ -366,7 +366,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 2rem;
-  padding-top: 3rem;
+
   @media (max-width: 1200px) {
     padding: 1rem 2rem;
   }
@@ -444,7 +444,7 @@ body {
   }
 
   @media (max-width: 415px) {
-    height: 245vh;
+    height: 320vh;
   }
 
   @media (max-width: 395px) {
@@ -681,7 +681,7 @@ body {
     height: 225vh;
   }
   @media (max-width: 415px) {
-    height: 460vh;
+    height: 550vh;
   }
 
   @media (max-width: 375px) {
