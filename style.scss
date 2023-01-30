@@ -529,66 +529,37 @@ body {
   }
 }
 .foto-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   &-width {
     margin: 0 auto;
     width: 60%;
     height: 100vh;
     background-color: $background-color-gray;
     position: relative;
-
-    @media (max-width: 1200px) {
-      width: 70%;
-    }
-    @media (max-width: 915px) {
-      width: 80%;
-    }
-    @media (max-width: 600px) {
-      width: 90%;
-    }
-    @media (max-width: 415px) {
-      width: 100%;
-      padding-top: 3rem;
-    }
   }
   & img {
     border-radius: 0.3rem;
     outline: 2px solid rgb(77, 76, 76);
   }
-
   &-all {
-    padding: 13rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    @media (max-width: 1200px) {
-      padding: 13rem 2rem;
-    }
-    @media (max-width: 600px) {
-      flex-direction: column-reverse;
-      padding: 6rem 1rem;
-    }
+    // display: flex;
+    padding: 15rem 4rem 0 4rem;
+    // align-items: center;
   }
   &-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1rem;
-    @media (max-width: 915px) {
-      padding-right: 1rem;
-    }
-    @media (max-width: 600px) {
-      flex-direction: row;
-      padding-top: 3rem;
-      position: relative;
-    }
+    float: left;
+    width: 30%;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 2rem;
   }
   &-right {
+    float: right;
+    width: 70%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -598,19 +569,19 @@ body {
   bottom: 30px;
   font-weight: 400;
 }
-
 .fa-sharp.fa-solid.fa-arrow-up {
   transform: rotate(-90deg);
 }
 .fa-sharp.fa-solid.fa-arrow-down {
   transform: rotate(-90deg);
 }
+
 .bigFoto {
-  max-height: 50vh;
+  max-height: 60vh;
   max-width: 100%;
 }
 .smallFoto {
-  width: 40%;
+  width: 60%;
 }
 
 .foto-page-button {
@@ -619,8 +590,8 @@ body {
     font-size: 1.7rem;
     display: flex;
     position: absolute;
-    top: 80%;
-    left: 11%;
+    top: 90%;
+    left: 15%;
     justify-content: space-between;
     margin: 0 auto;
     color: $text-color;
@@ -649,8 +620,8 @@ body {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 80%;
-    left: 55%;
+    top: 90%;
+    left: 62%;
     margin: 0 auto;
     color: $text-color;
     cursor: pointer;

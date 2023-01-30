@@ -633,11 +633,6 @@ body {
   }
 }
 
-.foto-page-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .foto-page-container-width {
   margin: 0 auto;
   width: 60%;
@@ -645,68 +640,22 @@ body {
   background-color: rgb(136, 136, 136);
   position: relative;
 }
-@media (max-width: 1200px) {
-  .foto-page-container-width {
-    width: 70%;
-  }
-}
-@media (max-width: 915px) {
-  .foto-page-container-width {
-    width: 80%;
-  }
-}
-@media (max-width: 600px) {
-  .foto-page-container-width {
-    width: 90%;
-  }
-}
-@media (max-width: 415px) {
-  .foto-page-container-width {
-    width: 100%;
-    padding-top: 3rem;
-  }
-}
 .foto-page-container img {
   border-radius: 0.3rem;
   outline: 2px solid rgb(77, 76, 76);
 }
 .foto-page-container-all {
-  padding: 13rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-@media (max-width: 1200px) {
-  .foto-page-container-all {
-    padding: 13rem 2rem;
-  }
-}
-@media (max-width: 600px) {
-  .foto-page-container-all {
-    flex-direction: column-reverse;
-    padding: 6rem 1rem;
-  }
+  padding: 15rem 4rem 0 4rem;
 }
 .foto-page-container-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-@media (max-width: 915px) {
-  .foto-page-container-left {
-    padding-right: 1rem;
-  }
-}
-@media (max-width: 600px) {
-  .foto-page-container-left {
-    flex-direction: row;
-    padding-top: 3rem;
-    position: relative;
-  }
+  float: left;
+  width: 30%;
 }
 .foto-page-container-right {
+  float: right;
+  width: 70%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -726,12 +675,12 @@ body {
 }
 
 .bigFoto {
-  max-height: 50vh;
+  max-height: 60vh;
   max-width: 100%;
 }
 
 .smallFoto {
-  width: 40%;
+  width: 60%;
 }
 
 .foto-page-button-left {
@@ -739,8 +688,8 @@ body {
   font-size: 1.7rem;
   display: flex;
   position: absolute;
-  top: 80%;
-  left: 11%;
+  top: 90%;
+  left: 15%;
   justify-content: space-between;
   margin: 0 auto;
   color: #424242;
@@ -771,8 +720,8 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 80%;
-  left: 55%;
+  top: 90%;
+  left: 62%;
   margin: 0 auto;
   color: #424242;
   cursor: pointer;
