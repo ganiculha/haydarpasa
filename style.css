@@ -382,6 +382,7 @@ body {
   align-items: center;
   margin: 0 auto;
   background-color: rgb(136, 136, 136);
+  padding-top: 4rem;
 }
 @media (max-width: 1300px) {
   .page-2 {
@@ -642,6 +643,7 @@ body {
   width: 60%;
   height: 100vh;
   background-color: rgb(136, 136, 136);
+  position: relative;
 }
 @media (max-width: 1200px) {
   .foto-page-container-width {
@@ -711,9 +713,9 @@ body {
   max-width: 185px;
 }
 .foto-page-container-right {
-  position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .foto-page-container-right img {
   max-height: 500px;
@@ -764,12 +766,15 @@ body {
   }
 }
 .foto-page-button-right {
-  width: 15rem;
+  width: 5rem;
   font-size: 1.7rem;
+  position: absolute;
+  bottom: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  top: 80%;
+  left: 50%;
   margin: 0 auto;
-  padding-top: 2rem;
   color: #424242;
   cursor: pointer;
 }

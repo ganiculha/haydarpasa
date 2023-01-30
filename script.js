@@ -162,3 +162,55 @@ window.addEventListener("DOMContentLoaded", function () {
   displayKitapList = displayKitapList.join("");
   kitapPage.innerHTML = displayKitapList;
 });
+
+/*-----------foto page carousel----------*/
+
+let BigImgButtonLeft = document.getElementById("BigImgButtonLeft");
+let BigImgButtonRight = document.getElementById("BigImgButtonRight");
+let BigFoto = document.querySelector(".bigFoto");
+
+let i = 0;
+let time = 5000;
+const imgList = [
+  "hay_1.jpg",
+  "hay_2.jpg",
+  "hay_3.jpg",
+  "hay_4.jpg",
+  "hay_5.jpg",
+  "hay_6.jpg",
+  "hay_7.jpg",
+  "hay_8.jpg",
+  "hay_9.jpg",
+  "hay_10.jpg",
+  "hay_11.jpg",
+  "hay_12.jpg",
+  "hay_13.jpg",
+  "hay_14.jpg",
+  "hay_15.jpg",
+  "hay_16.jpg",
+  "hay_17.jpg",
+  "hay_18.jpg",
+  "hay_19.jpg",
+  "hay_20.jpg",
+  "hay_21.jpg",
+  "hay_22.jpg",
+  "hay_23.jpg",
+  "hay_24.jpg",
+  "hay_25.jpg",
+  "hay_26.jpg",
+  "hay_27.jpg",
+];
+
+BigImgButtonLeft.addEventListener("click", function () {});
+BigImgButtonRight.addEventListener("click", function () {
+  carousel();
+});
+function carousel() {
+  BigFoto.src = "./img/foto_high/" + imgList[i];
+  console.log(BigFoto.src);
+  if (i < imgList.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
+}

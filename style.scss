@@ -332,10 +332,10 @@ body {
   align-items: center;
   margin: 0 auto;
   background-color: rgb(136, 136, 136);
+  padding-top: 4rem;
 
   @media (max-width: 1300px) {
     height: 120vh;
-
     padding: 1rem;
   }
   @media (max-width: 1200px) {
@@ -538,6 +538,7 @@ body {
     width: 60%;
     height: 100vh;
     background-color: $background-color-gray;
+    position: relative;
 
     @media (max-width: 1200px) {
       width: 70%;
@@ -593,9 +594,9 @@ body {
     }
   }
   &-right {
-    position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     img {
       max-height: 500px;
       max-width: 1000px;
@@ -644,12 +645,15 @@ body {
   }
 
   &-right {
-    width: 15rem;
+    width: 5rem;
     font-size: 1.7rem;
+    position: absolute;
+    bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    top: 80%;
+    left: 50%;
     margin: 0 auto;
-    padding-top: 2rem;
     color: $text-color;
     cursor: pointer;
     i:hover {
