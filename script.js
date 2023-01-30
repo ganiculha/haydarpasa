@@ -201,16 +201,29 @@ const imgList = [
   "hay_27.jpg",
 ];
 
-BigImgButtonLeft.addEventListener("click", function () {});
-BigImgButtonRight.addEventListener("click", function () {
-  carousel();
+BigImgButtonLeft.addEventListener("click", function () {
+  carouselMinus();
 });
-function carousel() {
-  BigFoto.src = "./img/foto_high/" + imgList[i];
-  console.log(BigFoto.src);
+BigImgButtonRight.addEventListener("click", function () {
+  carouselPlus();
+});
+let currentItem;
+function carouselPlus() {
   if (i < imgList.length - 1) {
     i++;
+    currentItem = i;
+    console.log(currentItem);
   } else {
     i = 0;
   }
+  BigFoto.src = "./img/foto_high/" + imgList[i];
+}
+function carouselMinus() {
+  if (i == currentItem) {
+    i--;
+    console.log(currentItem);
+  } else {
+    i = 0;
+  }
+  BigFoto.src = "./img/foto_high/" + imgList[i];
 }

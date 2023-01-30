@@ -555,17 +555,15 @@ body {
     }
   }
   & img {
-    width: 100%;
     border-radius: 0.3rem;
     outline: 2px solid rgb(77, 76, 76);
   }
 
   &-all {
-    padding: 13rem 5rem;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+    padding: 13rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
     @media (max-width: 1200px) {
       padding: 13rem 2rem;
     }
@@ -575,11 +573,10 @@ body {
     }
   }
   &-left {
-    padding-right: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-evenly;
+    gap: 1rem;
     @media (max-width: 915px) {
       padding-right: 1rem;
     }
@@ -588,24 +585,16 @@ body {
       padding-top: 3rem;
       position: relative;
     }
-    img {
-      max-height: 185px;
-      max-width: 185px;
-    }
   }
   &-right {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    img {
-      max-height: 500px;
-      max-width: 1000px;
-    }
+    justify-content: center;
   }
 }
 .foto_author {
   position: absolute;
-  right: 0;
+  right: 30px;
   bottom: 30px;
   font-weight: 400;
 }
@@ -616,13 +605,23 @@ body {
 .fa-sharp.fa-solid.fa-arrow-down {
   transform: rotate(-90deg);
 }
+.bigFoto {
+  max-height: 50vh;
+  max-width: 100%;
+}
+.smallFoto {
+  width: 40%;
+}
 
 .foto-page-button {
   &-left {
     width: 5rem;
     font-size: 1.7rem;
     display: flex;
-    justify-content: space-around;
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    justify-content: space-between;
     margin: 0 auto;
     color: $text-color;
     cursor: pointer;
@@ -648,11 +647,10 @@ body {
     width: 5rem;
     font-size: 1.7rem;
     position: absolute;
-    bottom: 30px;
     display: flex;
     justify-content: space-between;
     top: 80%;
-    left: 50%;
+    left: 55%;
     margin: 0 auto;
     color: $text-color;
     cursor: pointer;
