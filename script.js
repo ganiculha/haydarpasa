@@ -170,7 +170,6 @@ let BigImgButtonRight = document.getElementById("BigImgButtonRight");
 let BigFoto = document.querySelector(".bigFoto");
 
 let i = 0;
-let time = 3000;
 const imgList = [
   "hay_1.jpg",
   "hay_2.jpg",
@@ -198,14 +197,15 @@ const imgList = [
   "hay_24.jpg",
   "hay_25.jpg",
   "hay_26.jpg",
-  "hay_27.jpg",
 ];
 
 BigImgButtonLeft.addEventListener("click", function () {
   carouselMinus();
+  console.log(i);
 });
 BigImgButtonRight.addEventListener("click", function () {
   carouselPlus();
+  console.log(i);
 });
 let currentItem;
 function carouselPlus() {
@@ -224,7 +224,6 @@ function carouselMinus() {
     i--;
   }
   BigFoto.src = "./img/foto_high/" + imgList[i];
-  console.log(i);
 }
 /*-----up-down arrow-action----*/
 /**buttons*/
@@ -242,40 +241,67 @@ smallImgButtonRight.addEventListener("click", function () {
   downCarousel();
 });
 
+let item = 0;
+
 function upCarousel() {
-  if (i < imgList.length - 1) {
-    i++;
-    currentItem = i;
-    console.log(i);
-    smallImg1.src = "./img/foto_low/" + imgList[i];
-    smallImg2.src = "./img/foto_low/" + imgList[i + 1];
-    smallImg3.src = "./img/foto_low/" + imgList[i + 2];
+  if (item < imgList.length - 1) {
+    item++;
+    currentItem = item;
+
+    smallImg1.src = "./img/foto_low/" + imgList[item];
+    smallImg2.src = "./img/foto_low/" + imgList[item + 1];
+    smallImg3.src = "./img/foto_low/" + imgList[item + 2];
   } else {
-    i = 0;
+    item = 0;
   }
 
-  if (i == 24) {
+  if (item == 24) {
     smallImg3.src = "./img/foto_low/" + imgList[0];
   }
-  if (i == 25) {
+  if (item == 25) {
     smallImg2.src = "./img/foto_low/" + imgList[0];
     smallImg3.src = "./img/foto_low/" + imgList[1];
   }
-  if (i == 26) {
+  if (item == 26) {
     smallImg1.src = "./img/foto_low/" + imgList[0];
     smallImg2.src = "./img/foto_low/" + imgList[1];
     smallImg3.src = "./img/foto_low/" + imgList[2];
-    i = 0;
+    item = 0;
   }
 }
 function downCarousel() {
-  if (i < 1) {
-    i = 0;
+  if (item < 1) {
+    item = 0;
   } else {
-    i--;
+    item--;
   }
-  smallImg1.src = "./img/foto_low/" + imgList[i];
-  smallImg2.src = "./img/foto_low/" + imgList[i + 1];
-  smallImg3.src = "./img/foto_low/" + imgList[i + 2];
-  console.log(i);
+  smallImg1.src = "./img/foto_low/" + imgList[item];
+  smallImg2.src = "./img/foto_low/" + imgList[item + 1];
+  smallImg3.src = "./img/foto_low/" + imgList[item + 2];
+}
+smallImg1.addEventListener("click", function () {
+  imgLowToHigh1();
+});
+smallImg2.addEventListener("click", function () {
+  imgLowToHigh2();
+});
+smallImg3.addEventListener("click", function () {
+  imgLowToHigh3();
+});
+function imgLowToHigh1() {
+  BigFoto.src = smallImg1.src.replace("low", "high");
+  i = item;
+  console.log(item);
+}
+function imgLowToHigh2() {
+  BigFoto.src = smallImg2.src.replace("low", "high");
+
+  i = item;
+  console.log(item);
+}
+function imgLowToHigh3() {
+  BigFoto.src = smallImg3.src.replace("low", "high");
+
+  i = item;
+  console.log(item);
 }

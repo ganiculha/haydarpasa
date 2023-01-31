@@ -703,6 +703,22 @@ body {
 .smallFoto {
   width: 60%;
 }
+.smallFoto-1 {
+  cursor: pointer;
+  padding-top: 20rem;
+}
+
+#smallFoto1 {
+  cursor: pointer;
+}
+
+#smallFoto2 {
+  cursor: pointer;
+}
+
+#smallFoto3 {
+  cursor: pointer;
+}
 
 .foto-page-button-left {
   width: 17rem;

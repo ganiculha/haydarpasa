@@ -591,6 +591,19 @@ body {
 }
 .smallFoto {
   width: 60%;
+  &-1 {
+    cursor: pointer;
+    padding-top: 20rem;
+  }
+}
+#smallFoto1 {
+  cursor: pointer;
+}
+#smallFoto2 {
+  cursor: pointer;
+}
+#smallFoto3 {
+  cursor: pointer;
 }
 
 .foto-page-button {
@@ -604,7 +617,6 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     color: $text-color;
-
     cursor: pointer;
     i:hover {
       color: $text-hover-color;
