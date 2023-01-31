@@ -535,6 +535,15 @@ body {
     height: 100vh;
     background-color: $background-color-gray;
     position: relative;
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+    @media (max-width: 915px) {
+      width: 80%;
+    }
+    @media (max-width: 600px) {
+      width: 90%;
+    }
   }
   & img {
     border-radius: 0.3rem;
@@ -586,15 +595,16 @@ body {
 
 .foto-page-button {
   &-left {
-    width: 5rem;
+    width: 17rem;
     font-size: 1.7rem;
     display: flex;
     position: absolute;
-    top: 90%;
-    left: 15%;
+    top: 50%;
+    left: 1rem;
     justify-content: space-between;
     margin: 0 auto;
     color: $text-color;
+
     cursor: pointer;
     i:hover {
       color: $text-hover-color;
@@ -620,7 +630,7 @@ body {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 90%;
+    top: 85%;
     left: 62%;
     margin: 0 auto;
     color: $text-color;

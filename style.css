@@ -640,6 +640,21 @@ body {
   background-color: rgb(136, 136, 136);
   position: relative;
 }
+@media (max-width: 1200px) {
+  .foto-page-container-width {
+    width: 70%;
+  }
+}
+@media (max-width: 915px) {
+  .foto-page-container-width {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .foto-page-container-width {
+    width: 90%;
+  }
+}
 .foto-page-container img {
   border-radius: 0.3rem;
   outline: 2px solid rgb(77, 76, 76);
@@ -690,12 +705,12 @@ body {
 }
 
 .foto-page-button-left {
-  width: 5rem;
+  width: 17rem;
   font-size: 1.7rem;
   display: flex;
   position: absolute;
-  top: 90%;
-  left: 15%;
+  top: 50%;
+  left: 1rem;
   justify-content: space-between;
   margin: 0 auto;
   color: #424242;
@@ -726,7 +741,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 90%;
+  top: 85%;
   left: 62%;
   margin: 0 auto;
   color: #424242;

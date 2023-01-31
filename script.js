@@ -170,7 +170,7 @@ let BigImgButtonRight = document.getElementById("BigImgButtonRight");
 let BigFoto = document.querySelector(".bigFoto");
 
 let i = 0;
-let time = 5000;
+let time = 3000;
 const imgList = [
   "hay_1.jpg",
   "hay_2.jpg",
@@ -212,18 +212,70 @@ function carouselPlus() {
   if (i < imgList.length - 1) {
     i++;
     currentItem = i;
-    console.log(currentItem);
   } else {
     i = 0;
   }
   BigFoto.src = "./img/foto_high/" + imgList[i];
 }
 function carouselMinus() {
-  if (i == currentItem) {
+  if (i < 1) {
+    i = 0;
+  } else {
     i--;
-    console.log(currentItem);
+  }
+  BigFoto.src = "./img/foto_high/" + imgList[i];
+  console.log(i);
+}
+/*-----up-down arrow-action----*/
+/**buttons*/
+let smallImgButtonLeft = document.getElementById("arrow_u");
+let smallImgButtonRight = document.getElementById("arrow_d");
+/***imgs ***/
+let smallImg1 = document.getElementById("smallFoto1");
+let smallImg2 = document.getElementById("smallFoto2");
+let smallImg3 = document.getElementById("smallFoto3");
+
+smallImgButtonLeft.addEventListener("click", function () {
+  upCarousel();
+});
+smallImgButtonRight.addEventListener("click", function () {
+  downCarousel();
+});
+
+function upCarousel() {
+  if (i < imgList.length - 1) {
+    i++;
+    currentItem = i;
+    console.log(i);
+    smallImg1.src = "./img/foto_low/" + imgList[i];
+    smallImg2.src = "./img/foto_low/" + imgList[i + 1];
+    smallImg3.src = "./img/foto_low/" + imgList[i + 2];
   } else {
     i = 0;
   }
-  BigFoto.src = "./img/foto_high/" + imgList[i];
+
+  if (i == 24) {
+    smallImg3.src = "./img/foto_low/" + imgList[0];
+  }
+  if (i == 25) {
+    smallImg2.src = "./img/foto_low/" + imgList[0];
+    smallImg3.src = "./img/foto_low/" + imgList[1];
+  }
+  if (i == 26) {
+    smallImg1.src = "./img/foto_low/" + imgList[0];
+    smallImg2.src = "./img/foto_low/" + imgList[1];
+    smallImg3.src = "./img/foto_low/" + imgList[2];
+    i = 0;
+  }
+}
+function downCarousel() {
+  if (i < 1) {
+    i = 0;
+  } else {
+    i--;
+  }
+  smallImg1.src = "./img/foto_low/" + imgList[i];
+  smallImg2.src = "./img/foto_low/" + imgList[i + 1];
+  smallImg3.src = "./img/foto_low/" + imgList[i + 2];
+  console.log(i);
 }
