@@ -305,3 +305,5 @@ function imgLowToHigh3() {
   i = item;
   console.log(item);
 }
+const attributes = BigFoto.attributes;
+console.log(attributes);
